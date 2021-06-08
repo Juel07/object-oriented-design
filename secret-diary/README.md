@@ -5,7 +5,7 @@
 > "I can build with objects" 
 > "I can test-drive my code"
 
-Test-drive the secret diary example:
+#### Test-drive the secret diary example:
 
 ```
 SecretDiary
@@ -26,6 +26,6 @@ Then, when all your tests are green, reorganize it into classes with high cohesi
 
 This will also involve reorganizing your tests!
 
-Evidence Plan
+#### Evidence Plan
 How comfortable do you feel assessing how cohesive a class is?
 Did you successfully break the SecretDiary class up into multiple cohesive classes?

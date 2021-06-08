@@ -20,5 +20,9 @@ describe SecretDiary do
       subject.lock
       expect { subject.add_entry("note 1") }.to raise_error("Diary locked!")
     end
+    it "throws error when getting entries" do
+      subject.lock
+      expect { subject.get_entries }.to raise_error("Diary locked!")
+    end
   end
 end

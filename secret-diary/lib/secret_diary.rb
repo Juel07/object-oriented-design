@@ -10,6 +10,7 @@ class SecretDiary
   end
 
   def get_entries
+    throw_error if @locked == true
     @notes
   end
 

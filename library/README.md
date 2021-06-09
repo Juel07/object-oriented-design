@@ -1,4 +1,4 @@
-### Exercise - Library
+### Domain modelling exercise - Library
 
 #### Task
 - Have a go at writing the code and manually testing the library/book example
@@ -35,4 +35,4 @@ I would like the library to list all book titles by specific author
 
 #### Domain model
 
-[domain model](library/domain_model.png)
+<img src="domain_model.png" width = "60%">

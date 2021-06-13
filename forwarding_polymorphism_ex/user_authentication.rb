@@ -1,14 +1,14 @@
 class User
-  def initialize(name, bio, age, auth = Auth.new)
+  def initialize(name, bio, age)
     @name = name
     @bio = bio
     @age = age
-    @auth = auth
+    @auth = Auth.new
   end
 
   def profile(password)
     @auth.authenticate(password)
-    "#{@name}, born in #{birth_year}: #{@bio}"
+    puts "#{@name}, born in #{birth_year}: #{@bio}"
   end
 
   private
@@ -20,11 +20,15 @@ end
 
 class Auth
   def initialize
-    @password = password
+    @password = "123"
   end
 
   def authenticate(user_password)
-    return true if user_password == @password
-    false
+    puts user_password == @password
   end
 end
+
+# user = User.new("Jen", "Software Engineer", 23)
+# user.profile("123")
+# => true
+# => Jen, born in 1998: Software Engineer
